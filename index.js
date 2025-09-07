@@ -32,7 +32,7 @@ app.use(
     }
 )
 
-const connectionString = "mongodb+srv://admin:123@cluster0.evybyyh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+const connectionString = "mongodb+srv://admin:1234@cluster0.idqkczj.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 
 mongoose.connect(connectionString).then(
@@ -54,7 +54,6 @@ app.use("/products", productRouter)
 
 app.listen(5000, 
     ()=>{
-        console.log("Server is started")
-        console.log("Thank you")
+        console.log("Server is running on port 5000")
     }
 )
